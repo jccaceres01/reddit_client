@@ -1,0 +1,15 @@
+.card-container {
+  padding-top: 2rem;
+  background-color: white;
+  border: 1px solid var(--border-accent);
+  border-radius: 9px;
+  margin: var(--space-5);
+  width: 60rem;
+  border-color: var(--border-accent);
+  display: flex;
+}
+
+.card-container:hover {
+  border-color: var(--border-accent-hover);
+}
+

@@ -1,0 +1,17 @@
+.comment {
+  border: none;
+  border-left: 2px solid lightgray;
+  margin-top: 2rem;
+}
+
+.comment legend {
+  position: relative;
+  left: -1.8rem;
+  top: -1.2rem;
+}
+
+.comment legend span {
+  color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}

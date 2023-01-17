@@ -1,0 +1,66 @@
+.subreddit-card-container {
+  background-color: white;
+  border: 1px solid var(--border-accent);
+  border-radius: 9px;
+  margin-top: var(--space-5);
+  width: 20rem;
+}
+
+.subreddit-card-container:hover {
+  border-color: var(--border-accent-hover);
+}
+
+.subreddit-title {
+  padding: var(--space-5);
+  background-color: var(--primary);
+  color: white;
+  margin: 0 0 var(--space-4) 0;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.subreddit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: var(--space-3)
+}
+
+.subreddit-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: var(--space-2) var(--space-1);
+  border-bottom: 2px solid var(--border-accent);
+  text-decoration: none;
+  color: black;
+}
+
+.subreddit-list li a:visited, .subreddit-list li a:active {
+  color: black;
+}
+
+.subreddit-list li a:hover {
+  background-color: var(--primary);
+  cursor:pointer;
+}
+
+.subreddit-list li img {
+  width: 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 24px;
+  background-color: var(--background-accent-hover);
+}
+
+.subreddit-list li span {
+  padding-left: var(--space-3);
+}
+
+.subreddit-list li:hover span {
+  color: white;
+}
+
+.subreddit-list li:hover img {
+  border-color: white;
+}

@@ -8,6 +8,7 @@
 - Redux
 - Redux Toolkit
 - React Router
+- React-Loading-Skeleton
 - Jest
 
 ## Features
