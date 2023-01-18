@@ -3,7 +3,9 @@
   border: 1px solid var(--border-accent);
   border-radius: 9px;
   margin-top: var(--space-5);
+  margin-left: var(--space-5);
   width: 20rem;
+  z-index: 1000;
 }
 
 .subreddit-card-container:hover {
@@ -63,4 +65,12 @@
 
 .subreddit-list li:hover img {
   border-color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .subreddit-card-container {
+    position: fixed;
+    top: 5rem;
+    left: 1rem;
+  }
 }

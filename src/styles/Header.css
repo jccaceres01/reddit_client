@@ -52,6 +52,10 @@
   border-bottom-right-radius: 0px;
 }
 
+#btn-menu {
+  display: none;
+}
+
 @media screen and (min-width: 390px) {
   .search {
     width: 14rem;
@@ -61,6 +65,16 @@
 @media screen and (min-width: 768px) {
   .search {
     width: 25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #btn-menu {
+    display: inline-block;
+  }
+
+  #divisor {
+    display: none;
   }
 }
 

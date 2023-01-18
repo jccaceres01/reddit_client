@@ -22,6 +22,9 @@
 
 .grid-container main {
   grid-area: main;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .grid-container aside {
@@ -30,4 +33,31 @@
 
 .grid-container footer {
   grid-area: footer;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+      'header'
+      'main'
+      'footer';
+    column-gap: 1rem;
+  }
+
+  .grid-container header {
+    grid-area: header;
+  }
+  
+  .grid-container main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid-container footer {
+    grid-area: footer;
+  }
 }

@@ -5,7 +5,7 @@ export const fetchPosts = createAsyncThunk('post/fetchPost', async (category, th
   thunkApi.dispatch(toggleLoading(true));
 
   try {
-    const res = await fetch(`${baseApi}/${category}.json`);
+    const res = await fetch(`${baseApi}/${category || 'Popular'}.json`);
     const json = await res.json();
     thunkApi.dispatch(toggleLoading(false));
     return json.data.children.map((post) => post.data);
